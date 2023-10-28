@@ -8,7 +8,7 @@ styl: 'Styl: neogotycki'
 czas: 'Czas powstania: ok. 1903 '
 tagi: ""
 ekstra: ""
-mp3: '../mp3/1 - Ołtarz główny.mp3'
+mp3: '../mp3/1 - ołtarz główny.mp3'
 obiekt3d: '../models/1 - Ołtarz głównySS.glb'
 warsztat: 'Autor, szkoła, warsztat: '
 opis: 'Architektoniczny, wolnostojący, w tle półkoliście zamkniętego prezbiterium. Na skrzyniowej mensie i predelli retabulum trzyprzęsłowe. 

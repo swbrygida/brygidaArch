@@ -42,7 +42,7 @@
         <hr>
         <div class="model">
           <ClientOnly>
-            <CanvasModelTest :obiekt3d="obiekt3d" :mp3="mp3" />
+            <CanvasModel :obiekt3d="obiekt3d" :mp3="mp3" />
           </ClientOnly>
         </div>
         <hr>
