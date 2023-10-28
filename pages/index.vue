@@ -4,7 +4,7 @@
       <h1>Index</h1>
       <div class="indexMain">
         <div>
-          <NuxtLink target="_blank" to="/arch"
+          <NuxtLink target="_blank" to="/jeden"
             ><img src="../public/foto/01.png" /> katalog zabytków z opisami</NuxtLink
           >
         </div>
