@@ -1,6 +1,12 @@
 <template>
     <main>
         <Belka />
+    
+        <ContentDoc>
+      <template #empty>
+        <h1>Document is empty</h1>
+      </template>
+    </ContentDoc>
         <nav>
           <ContentNavigation v-slot="{ navigation }">
             <ul>
@@ -55,3 +61,8 @@ console.log(title);
 console.log(obiekt3d);
 console.log(mp3);
   </script>
+  <style>
+  h1 {
+    display: none;
+  }
+  </style>
