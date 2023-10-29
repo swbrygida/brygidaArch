@@ -10,7 +10,6 @@ body {
   padding: 0;
   width: 100vw;
   overflow-x: hidden;
-  /* background-color: rgb(51, 51, 51); */
   background-color: rgb(255, 255, 255);
   color: rgb(15, 15, 15);
   font-family: "Inknut Antiqua", serif;
@@ -35,5 +34,8 @@ h2 {
 .noPadding {
   padding: 0;
   margin: 0;
+} 
+#calak {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 </style>

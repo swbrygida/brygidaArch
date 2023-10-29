@@ -71,9 +71,14 @@ console.log(title);
 console.log(obiekt3d);
 console.log(mp3);
 
+onBeforeMount(() => {
+  gsap.from('body', 1, {deley: 0.5, opacity: 0})
+}) 
+
 onMounted(() => {
     
-  gsap.from('body', 1, {deley: 0.5, opacity: 0})
+  
+
   const pp = document.querySelectorAll("p");
   gsap.from("nav ul li", 1, { delay: 1, opacity: 0 });
   gsap.from(pp, 1, { delay: 1, opacity: 0 });
@@ -92,11 +97,49 @@ onMounted(() => {
   .navi {
     flex-direction: row-reverse;
   }
+  .meta {
+  width: 14em;
+  padding: 2em;
+  height: auto;
+  background-color: #fff;
+  box-shadow: var(--shadow);
+}
+.metadane {
+  flex-grow: 1;
+  margin: 2em;
+}
+.metadane p {
+  padding-left: 2em;
+}
+.metaopisblok {
+  flex-grow: 1;
+  margin: 2em;
+}
 }
 @media screen and (orientation: portrait) {
   .navi {
     flex-direction: row;
   }
+  .meta {
+  width: 14em;
+  padding: 2em0;
+  height: auto;
+  background-color: #fff;
+  box-shadow: var(--shadow);
+}
+.metadane {
+  flex-grow: 1;
+  margin: 2em;
+}
+.meta p {
+  padding-left: 0;
+  font-size: small;
+  font-weight: 300;
+}
+.metaopisblok {
+  flex-grow: 1;
+  margin: 2em;
+}
 }
 
 .navi {
@@ -146,24 +189,8 @@ canvas {
   display: flex;
   flex-wrap: wrap;
 }
-.meta {
-  width: 14em;
-  padding: 2em;
-  height: auto;
-  background-color: #fff;
-  box-shadow: var(--shadow);
-}
-.metadane {
-  flex-grow: 1;
-  margin: 2em;
-}
-.metadane p {
-  padding-left: 2em;
-}
-.metaopisblok {
-  flex-grow: 1;
-  margin: 2em;
-}
+
+
 canvas {
   margin: 2em;
   background-color: #fff;
