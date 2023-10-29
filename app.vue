@@ -27,6 +27,11 @@ a {
   font-size: 1rem;
   color: rgb(13, 13, 13);
 }
+h2 {
+  font-size: 1rem;
+  line-height: 1.8em;
+  margin: 2em ;
+  }
 .noPadding {
   padding: 0;
   margin: 0;

@@ -2,6 +2,8 @@
     <main>
       <!-- <div>{{ props.obiekt3d }}</div> -->
       <!-- <div>{{ props.mp3 }}</div> -->
+      <div id="loading-bar"></div>
+      <div id="loading-bar-error"></div>
     </main>
   </template>
   <script setup>
@@ -28,7 +30,42 @@
   scene.add(directionalLight);
   directionalLight.position.set(5, 1, 5);
   
-  const gltfLoader = new GLTFLoader();
+
+
+
+    
+
+const loadingMenager = new THREE.LoadingManager(
+// loaded 
+() => {
+  window.setTimeout(() => {
+  const loadingElement = document.getElementById('loading-bar')
+  loadingElement.style.transformOrigin = 'top right'
+  loadingElement.style.transform = 'scaleX(0)'
+  }, 100)
+},
+// progress
+(itemUrl, itemsLoaded, itemsTotal) => {
+  const loadingElement = document.getElementById('loading-bar')
+  const progress = itemsLoaded / itemsTotal
+  loadingElement.style.transform = 'scaleX(' + progress + ')'
+  console.log('itemsTotal')
+  console.log(itemsTotal)
+}
+);
+
+loadingMenager.onError = function ( url ) {
+	console.log( 'There was an error loading ' + url );
+  if( url == '../models/NO.glb') {
+  document.querySelector('nav').style.height = '20em'
+  document.querySelector('h2').style.margin = '2em'
+  document.querySelector('.obiekt').style.display = 'none'
+  document.querySelector('canvas').style.display = 'none'
+  } else {
+  document.getElementById('loading-bar-error').innerHTML = '<p>Notujemy problem z połączeniem i pobraniem dużego obiektu 3d. Prosimy - spróbuj później.</p>';
+  }
+};
+  const gltfLoader = new GLTFLoader(loadingMenager);
   gltfLoader.load(props.obiekt3d, (gltf) => {
     console.log(gltf.scene);
     scene.add(gltf.scene);
@@ -61,5 +98,26 @@
     console.log("wymontowyje");
   });
   </script>
-  <style></style>
+  <style>
+  #loading-bar {
+  position: relative;
+  top: 30vh; left: 0;
+  height: 3px;
+  width: 100%;
+  margin: 0 2em;
+  background-color: rgb(38, 38, 38);
+  transform: scaleX(0);
+  transform-origin: top left;
+  transition: transform 0.3s;
+}
+#loading-bar-error {
+
+  height: 30px;
+  width: 100%;
+  margin: 0 2em;
+  color: #000;
+  background-color: transparent;
+}
+
+</style>
   

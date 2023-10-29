@@ -20,4 +20,34 @@
     font-size: large;
     font-weight: 800;
   }
+
+  @media (orientation: portrait) {
+ 
+    .belka, 
+    nav li a {
+      font-size: small;
+      font-weight: 300;
+    }
+    nav {
+      padding: 0;
+    }
+    nav li {
+  padding: 0;
+}
+    
+  }
+  @media (orientation: landscape) {
+    .linkBelki {
+      padding: 1em 3em;
+      margin: 1em;
+    }
+    nav {
+      padding: 2em;
+    }
+    nav li {
+  padding: 0 2em;
+
+}
+  }
+
   </style>

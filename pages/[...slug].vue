@@ -1,5 +1,6 @@
 <template>
     <main>
+    
     <div class="calak" >
         <Belka />
     
@@ -13,7 +14,7 @@
         <nav>
           <ContentNavigation v-slot="{ navigation }">
             <ul>
-              <li>Wybierz obiekt z listy poniżej:</li>
+              
               <li v-for="link of navigation">
                 <NuxtLink :to="link._path">
                   {{ link.title }}
@@ -56,6 +57,9 @@
     </main>
   </template>
   <script setup>
+import gsap from 'gsap';
+
+
 const { page } = useContent();
 useContentHead(page);
 
@@ -66,11 +70,21 @@ const mp3 = page.value.mp3;
 console.log(title);
 console.log(obiekt3d);
 console.log(mp3);
+
+onMounted(() => {
+    
+  gsap.from('body', 1, {deley: 0.5, opacity: 0})
+  const pp = document.querySelectorAll("p");
+  gsap.from("nav ul li", 1, { delay: 1, opacity: 0 });
+  gsap.from(pp, 1, { delay: 1, opacity: 0 });
+  });
+
   </script>
   <style>
   h1 {
     display: none;
   }
+
   :root {
   --shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
 }
@@ -101,7 +115,6 @@ console.log(mp3);
 nav {
   height: 10em;
   width: 14em;
-  padding: 2em;
   margin: 2em;
   overflow-y: scroll;
   box-shadow: var(--shadow);
@@ -112,7 +125,6 @@ nav {
 } */
 nav li {
   list-style: none;
-  padding: 0 2em;
   line-height: 1.8em;
 }
 nav li:hover {
@@ -160,4 +172,6 @@ canvas {
 .metatitle {
   font-weight: 800;
 }
+
+
   </style>
