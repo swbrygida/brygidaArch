@@ -6,8 +6,8 @@
 <script setup>
 import gsap from 'gsap';
 
-onBeforeMount(() => {
-  gsap.from('body', 1, {deley: 0.5, opacity: 0})
+onMounted(() => {
+  gsap.to('body', 1, {deley: 0.5, opacity: 1})
 }) 
 
 </script>
@@ -23,6 +23,7 @@ body {
   font-family: "Inknut Antiqua", serif;
   font-weight: 300;
   line-height: 1.8rem;
+  opacity: 0;
 }
 p {
   font-size: 1rem;
