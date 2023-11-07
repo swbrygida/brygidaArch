@@ -3,6 +3,14 @@
     <NuxtPage />
   </div>
 </template>
+<script setup>
+import gsap from 'gsap';
+
+onBeforeMount(() => {
+  gsap.from('body', 1, {deley: 0.5, opacity: 0})
+}) 
+
+</script>
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;800&display=swap");
 body {

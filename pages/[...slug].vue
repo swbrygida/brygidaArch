@@ -71,9 +71,7 @@ console.log(title);
 console.log(obiekt3d);
 console.log(mp3);
 
-onBeforeMount(() => {
-  gsap.from('body', 1, {deley: 0.5, opacity: 0})
-}) 
+
 
 onMounted(() => {
     
