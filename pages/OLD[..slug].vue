@@ -3,22 +3,18 @@
     
     <div class="calak" >
         <Belka />
-<div class="losy">
-    <h3>Wyszukaj interesujący Cię obiekt:</h3>
-    <input type="text" id="mojaFraza" @keyup="mojeSzukanie()" placeholder="Wpisz nazwę szukanego obiektu" title="Wprowadz nazwe">
-    <h3>Zdecyduj się na obiekt losowo wybrany:</h3>
+
     <div id="wylosowane"></div>
-    <h3>lub wybierz sposród poniższych:</h3>
-</div>
         <ContentDoc>
       <template #empty>
         <h1>Document is empty</h1>
       </template>
     </ContentDoc>
+      <input type="text" id="myInput" @keyup="mojeSzukanie()" placeholder="Szukaj obiektu" title="Wprowadz nazwe">
     <div class="navi">
         <nav>
           <ContentNavigation v-slot="{ navigation }">
-            <ul id="ListaZabytkowUL">
+            <ul>
               
               <li v-for="link of navigation">
                 <NuxtLink :to="link._path">
@@ -79,20 +75,6 @@ console.log(mp3);
 
 function mojeSzukanie() {
   console.log("szukam")
-  var input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById("mojaFraza");
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("ListaZabytkowUL");
-    li = ul.getElementsByTagName("li");
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
-        }
-    }
 
 }
 
@@ -100,7 +82,6 @@ onMounted(() => {
   const pp = document.querySelectorAll("p");
   gsap.from("nav ul li", 1, { delay: 1, opacity: 0 });
   gsap.from(pp, 1, { delay: 1, opacity: 0 });
-  gsap.from('.losy', 1, { delay: 1, opacity: 0 });
 
   const linki = document.querySelectorAll('li')
   console.log(linki)
@@ -164,12 +145,6 @@ onMounted(() => {
 #wylosowane {
   margin: 2em 6em;
 }
-h3 {
-  font-weight: 800;
-  font-size: 1em;
-  margin: 0 4em;
-  padding: 0 2em;
-}
 
 }
 @media screen and (orientation: portrait) {
@@ -200,19 +175,21 @@ h3 {
   margin: 2em;
   font-size: small;
 }
-h3 {
-  font-weight: 800;
-  font-size: 1em;
-  margin: 1em ;
-  padding: 0;
-}
 }
 
 .navi {
   display: flex;
   flex-wrap: wrap;
 }
-
+.losuj {
+  height: 10em;
+  width: 14em;
+  padding: 2em;
+  margin: 2em;
+  box-shadow: var(--shadow);
+  flex-grow: 1;
+  display: none;
+}
 nav {
   height: 10em;
   width: 14em;
@@ -258,22 +235,5 @@ canvas {
   font-weight: 800;
 }
 
-#mojaFraza  {
-  height: 3em;
-  margin: 2em;
-  font-size: 1em;
-  font-family: "Inknut Antiqua", serif;
-  font-weight: 300;
-  line-height: 1.8rem;
-  padding-left: 4em;
-  overflow-y: scroll;
-  box-shadow: var(--shadow);
-  flex-grow: 1;
-}
-.losy {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
 
   </style>
