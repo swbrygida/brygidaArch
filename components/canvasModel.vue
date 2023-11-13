@@ -59,8 +59,8 @@ loadingMenager.onError = function ( url ) {
   if( url == '../models/NO.glb') {
   document.querySelector('nav').style.height = '20em'
   document.querySelector('h2').style.margin = '2em'
-  document.querySelector('.obiekt').style.display = 'none'
   document.querySelector('canvas').style.display = 'none'
+  document.querySelector('.obiekt').style.display = 'none'
   } else {
   document.getElementById('loading-bar-error').innerHTML = '<p>Notujemy problem z połączeniem i pobraniem dużego obiektu 3d. Prosimy - spróbuj później.</p>';
   }

@@ -4,11 +4,15 @@
     <div class="calak" >
         <Belka />
 <div class="losy">
-    <h3>Wyszukaj interesujący Cię obiekt:</h3>
+<div class="mojaFraza">
+    <h3>Wyszukaj i/lub wybierz interesujący Cię obiekt sposród poniższych::</h3>
     <input type="text" id="mojaFraza" @keyup="mojeSzukanie()" placeholder="Wpisz nazwę szukanego obiektu" title="Wprowadz nazwe">
-    <h3>Zdecyduj się na obiekt losowo wybrany:</h3>
+</div>
+<div class="wylosowane">
+    <h3>lub wylosuj:</h3>
     <div id="wylosowane"></div>
-    <h3>lub wybierz sposród poniższych:</h3>
+</div>
+    
 </div>
         <ContentDoc>
       <template #empty>
@@ -116,9 +120,10 @@ onMounted(() => {
   const wylosowaneNazwa = zabytki[wylosowane].nazwa
   const wylosowaneHref = zabytki[wylosowane].href
   const wylosowaneDodaj = '<a href=\"' + wylosowaneHref + '\">' + wylosowaneNazwa + '</a>'
+  const wylosowanePng = '<a href=\"' + wylosowaneHref + '\"><img src=\"/icons/losuj2.png\" /></a>'
   console.log(wylosowaneNazwa)
   console.log(wylosowaneHref)
-  document.getElementById("wylosowane").innerHTML = wylosowaneDodaj 
+  document.getElementById("wylosowane").innerHTML = wylosowanePng
 
   let szukanie = zabytki.find(q => q.nazwa === 'Ołtarz główny');
   console.log(szukanie);
@@ -268,12 +273,25 @@ canvas {
   padding-left: 4em;
   overflow-y: scroll;
   box-shadow: var(--shadow);
-  flex-grow: 1;
+  flex-grow:2 ;
+  width: 70%;
 }
 .losy {
+  margin-top: 2em;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
 }
-
+.mojaFraza {
+  width: 42em;
+  flex-grow: 2;
+}
+.wylosowane {
+  width: 14em;
+  flex-grow: 1;
+  flex-direction: column-reverse;
+}
+#wylosowane img {
+  width: 4em;
+}
   </style>
