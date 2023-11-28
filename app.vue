@@ -1,6 +1,7 @@
 <template>
   <div id="calak">
     <NuxtPage />
+
   </div>
 </template>
 <script setup>
