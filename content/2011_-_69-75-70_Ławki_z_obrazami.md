@@ -1,5 +1,5 @@
 ---
-title: 'Ławki z obrazami'
+title: 'Ławki z obrazami 70'
 id: 2011-69
 rodzaj: 'zabytek'
 data: 'Rejestr zabytków województwa lubelskiego B\264 z dn. 20 października 2011 r.'
@@ -10,7 +10,7 @@ czas: 'Czas powstania: pocz. XX w. '
 tagi: ""
 ekstra: ""
 mp3: '../mp3/69-75. Ławki z obrazami.mp3'
-obiekt3d: '../models/69-75. Ławki z obrazami.glb'
+obiekt3d: '../models/69-75-70. Ławki z obrazami.glb'
 warsztat: 'Autor, szkoła, warsztat:'
 opis: 'Ławka składa się z poziomej deski (siedziska) wprawionej w trzy pionowe deski (boki i noga środkowa) oraz oparcia. 
 

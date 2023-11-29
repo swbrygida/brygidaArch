@@ -1,5 +1,5 @@
 ---
-title: 'Ławki z obrazami'
+title: 'Ławki z obrazami 74'
 id: 2011-69
 rodzaj: 'zabytek'
 data: 'Rejestr zabytków województwa lubelskiego B\264 z dn. 20 października 2011 r.'

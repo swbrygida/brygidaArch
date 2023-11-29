@@ -1,5 +1,5 @@
 ---
-title: 'Ławka pojedyńcza 81'
+title: 'Ławka pojedyńcza 91'
 id: 2011-81
 rodzaj: 'zabytek'
 data: 'Rejestr zabytków województwa lubelskiego B\264 z dn. 20 października 2011 r. '
