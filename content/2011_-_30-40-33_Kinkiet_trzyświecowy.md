@@ -1,5 +1,5 @@
 ---
-title: 'Kinkiet trzyświecowy'
+title: 'Kinkiet trzyświecowy 33'
 id: 2011-30
 rodzaj: 'zabytek'
 data: 'Rejestr zabytków województwa lubelskiego B\264 z dn. 20 października 2011 r.'
@@ -10,7 +10,7 @@ czas: 'Czas powstania: pocz. XIX/XX w. '
 tagi: ""
 ekstra: ""
 mp3: '../mp3/30-40. Kinkiet trzyświecowy.mp3'
-obiekt3d: '../models/30-40. Kinkiet trzyświecowy.glb'
+obiekt3d: '../models/30-40-33. Kinkiet trzyświecowy.glb'
 warsztat: 'Autor, szkoła, warsztat:'
 opis: 'Trzon stanowi ażurowa sterczyna z czołgankami zwieńczona kwiatonem.
 

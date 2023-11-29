@@ -1,5 +1,5 @@
 ---
-title: 'Żyrandol 24-ro świecowy'
+title: 'Żyrandol 24-ro świecowy 23'
 id: 2011-23
 rodzaj: 'zabytek'
 data: 'Rejestr zabytków województwa lubelskiego B\264 z dn. 20 października 2011 r.'
@@ -10,7 +10,7 @@ czas: 'Czas powstania: XIX/XX w. '
 tagi: ""
 ekstra: ""
 mp3: '../mp3/23-25. Żyrandol 24-ro świecowy.mp3'
-obiekt3d: '../models/23-25. Żyrandol 24-ro świecowy.glb'
+obiekt3d: '../models/23-25-23. Żyrandol 24-ro świecowy.glb'
 warsztat: 'Autor, szkoła, warsztat:'
 opis: 'Żyrandol o rozbudowanej formie, silnie powyginanych ramionach i obfitej dekoracji z przewagą elementów gotyckich. 
 

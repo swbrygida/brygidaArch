@@ -1,5 +1,5 @@
 ---
-title: 'Klęcznik neogotycki'
+title: 'Klęcznik neogotycki 12'
 id: 2015-5
 rodzaj: 'zabytek'
 data: 'Rejestr zabytków województwa lubelskiego B\264 z dn. 29 maja 2015 r.'

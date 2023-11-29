@@ -1,5 +1,5 @@
 ---
-title: 'Kinkiet trzyświecowy'
+title: 'Kinkiet trzyświecowy 30'
 id: 2011-30
 rodzaj: 'zabytek'
 data: 'Rejestr zabytków województwa lubelskiego B\264 z dn. 20 października 2011 r.'
