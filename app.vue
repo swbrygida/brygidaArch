@@ -1,7 +1,7 @@
 <template>
   <div id="calak">
     <NuxtPage />
-
+    <Stopka />
   </div>
 </template>
 <script setup>

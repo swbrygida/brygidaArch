@@ -2,8 +2,8 @@
     <main>
       <div class="stopka">
         <p>
-          <NuxtLink  target="_blank"  to="https://pobrygidkowski.pl/pl/aktualno%C5%9Bci/548-stworzenie-nowoczesnej-aplikacji-internetowej-oraz-udost%C4%99pnienie-przewodnika-wirtualnego-3d-online-2.html"
-            >Dofinansowano ze środków Ministra Kultury i Dziedzictwa Narodowego pochodzących z Funduszu Promocji Kultury – państwowego funduszu celowego </NuxtLink
+          <NuxtLink  target="_blank"  to="/info"
+            >Dofinansowano ze środków MKiDN</NuxtLink
           >
         </p>
       </div>
@@ -15,10 +15,15 @@
     height: auto;
     padding: 1em 5vw;
     border-top: 2px solid #f2f2f2;
+    background-color: #fff;
     text-align: center;
     font-size: large;
     font-weight: 800;
+    position: fixed;
+    bottom: 0; left: 0;
+    z-index: 5000000000;
 
   }
+  
   </style>
   
