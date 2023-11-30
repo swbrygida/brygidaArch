@@ -1,5 +1,5 @@
 ---
-title: 'Świecznik ołtarzowy'
+title: 'Świecznik ołtarzowy 50'
 id: 2011-50
 rodzaj: 'zabytek'
 data: 'Rejestr zabytków województwa lubelskiego B\264 z dn. 20 października 2011 r.'
