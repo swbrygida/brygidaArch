@@ -1,5 +1,5 @@
 ---
-title: ' Ornat biały'
+title: ' Ornat biały 69'
 id: 1986-69
 rodzaj: 'zabytek'
 data: 'Rejestr zabytków województwa lubelskiego B\264 z dn. 29 listopada 1986 r. '
