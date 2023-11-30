@@ -21,9 +21,8 @@
     font-weight: 800;
     position: fixed;
     bottom: 0; left: 0;
-    z-index: 5000000000;
+    
 
   }
-  
+
   </style>
-  
