@@ -1,5 +1,6 @@
 <template>
   <div id="calak">
+    <Dostepny />
     <NuxtPage />
     <Stopka />
   </div>

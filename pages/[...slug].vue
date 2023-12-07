@@ -153,7 +153,7 @@ onMounted(() => {
   width: 14em;
   padding: 2em;
   height: auto;
-  background-color: #fff;
+  
   box-shadow: var(--shadow);
 }
 .metadane {
