@@ -9,6 +9,16 @@ export default defineNuxtConfig({
     markdown: {
       anchorLinks: false      
     }
+  },
+  app: {
+    head: {
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
+      title: "Archiwum Zabytków Kościoła Rektoralnego w Lublinie",
+      htmlAttrs: {
+        lang: 'pl'
+      }
+    }
   }
 
 })
