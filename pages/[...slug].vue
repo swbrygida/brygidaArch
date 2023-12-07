@@ -121,7 +121,7 @@ onMounted(() => {
   const wylosowaneNazwa = zabytki[wylosowane].nazwa
   const wylosowaneHref = zabytki[wylosowane].href
   const wylosowaneDodaj = '<a href=\"' + wylosowaneHref + '\">' + wylosowaneNazwa + '</a>'
-  const wylosowanePng = '<a href=\"' + wylosowaneHref + '\"><img src=\"/icons/losuj2.png\" /></a>'
+  const wylosowanePng = '<a href=\"' + wylosowaneHref + '\"><img alt=\"obrazek pokazuje kostkę do rzutów symbolizującą ślepy traf\"  src=\"/icons/losuj2.png\" /></a>'
   console.log(wylosowaneNazwa)
   console.log(wylosowaneHref)
   document.getElementById("wylosowane").innerHTML = wylosowanePng
